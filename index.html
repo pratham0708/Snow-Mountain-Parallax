@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Snow Mountain</a>
+        <ul>
+          <li><a href="#" class="active" >Parallax 1</a></li>
+          <li><a href="#" >Parallax 2</a></li>
+          <li><a href="#" >Parallax 3</a></li>
+          <li><a href="#">Parallax 4</a></li>
+        </ul>
+      </header>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="man.png" id="man">
+        <img src="clouds_1.png" id="clouds_1">
+        <img src="clouds_2.png" id="clouds_2">
+    
+        <img src="mountain_left.png" id="mountain_left">
+        <img src="mountain_right.png" id="mountain_right">
+     
+    </section>
+    <div class="sec">
+        <h2>Snow Mountains</h2>
+        <p><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.</p>
+            </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script>
+    gsap.to("#bg", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        scale : 1.5
+    })
+ 
+    gsap.to("#man", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        scale : 0.5
+    })
+ 
+    gsap.to("#mountain_left", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        x : -500,
+    })
+    gsap.to("#mountain_right", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        x : 500,
+    })
+    gsap.to("#clouds_1", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        x : 200,
+    })
+    gsap.to("#clouds_2", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        x : -200,
+    })
+    gsap.to("#text", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        y : 300,
+    })
+    gsap.to(".header", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        y : -500,
+    })
+</script>
+</body>
+</html>
